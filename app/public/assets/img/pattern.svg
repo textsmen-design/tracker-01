@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160">
+  <defs>
+    <g id="paw">
+      <ellipse cx="0" cy="5" rx="2.8" ry="3.2"/>
+      <circle cx="-3.5" cy="-0.5" r="1.6"/>
+      <circle cx="0" cy="-2.2" r="1.6"/>
+      <circle cx="3.5" cy="-0.5" r="1.6"/>
+    </g>
+  </defs>
+  <g fill="#1E8A5A" opacity="0.10">
+    <use href="#paw" transform="translate(36,128)"/>
+    <use href="#paw" transform="translate(88,84) scale(0.8) rotate(-18)"/>
+    <use href="#paw" transform="translate(132,44) scale(0.55) rotate(-34)"/>
+    <use href="#paw" transform="translate(12,44) scale(0.6) rotate(14)"/>
+  </g>
+</svg>
