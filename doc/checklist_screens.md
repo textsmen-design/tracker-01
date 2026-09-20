@@ -61,3 +61,24 @@
 - Все 14 критериев приёмки tz.md §15 пройдены (детали и доказательства — `Tracker_01/doc/test_report.md`).
 - Данные после проверок приведены к чистому демо-состоянию: `8/3/25/17/8/9/9/3` (users/projects/tasks/members/comments/notifications/activity/attachments).
 - Окружение после перезагрузки macOS поднимается скриптом `Tracker_01/scripts/start_dev.sh` (исправлен в 20.09.2026 — docroot `app/public`).
+
+## Финальный брендинг Stopa (финиш, 20.09.2026)
+Применена учебная айдентика **Stopa** (см. `info/brandbook.md`). Финальные скриншоты — реальные,
+сняты в Chrome 150 headless (1440×900) под ролями admin/manager/employee, каталог `doc/screenshots/branded/`:
+
+| Файл | Экран | Роль |
+|---|---|---|
+| 01_login.png | страница входа (логотип + таглайн) | гость |
+| 02_dashboard_admin.png | Главная (статистика) | админ |
+| 03_kanban_board.png | Мои задачи — доска (5 колонок) | админ |
+| 04_projects.png | Проекты | админ |
+| 05_project_tasks.png | Проект — задачи | админ |
+| 06_task_detail.png | Карточка задачи (комментарии/история) | админ |
+| 07_team.png | Команда | админ |
+| 08_admin_users.png | Пользователи и роли | админ |
+| 09_notifications.png | Уведомления | админ |
+| 10_profile.png | Настройки профиля | админ |
+| 11_dashboard_manager.png | Главная | руководитель |
+| 12_dashboard_employee.png | Главная (меню без администрирования) | сотрудник |
+
+Проверено на финише: все страницы 200 без PHP-предупреждений; CSRF-отказ — HTTP 419; неизвестный URL — HTTP 404 с контентом; регрессия 41/41 (см. `test_report.md`).
